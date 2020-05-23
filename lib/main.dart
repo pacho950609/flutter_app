@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
         ),
         body: Column(children: <Widget>[
           new DescriptionPlace('Estilo1','There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected huma.',4),
-          new Review('Pachito',1,2,'There are many variations')
+          new Review('Pachito',1,2,'There are many variations and should be more and more')
         ],)
       ) //MyHomePage(title: 'Flutter Demo Home Page'),
     );

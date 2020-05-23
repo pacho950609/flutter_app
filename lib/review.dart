@@ -56,7 +56,7 @@ class Review extends StatelessWidget {
 
     final reviewContainer = Container(
       child: Row(
-        children: <Widget>[image, userDetails],
+        children: <Widget>[image, Expanded(child: userDetails)],
       ),
     );
 
