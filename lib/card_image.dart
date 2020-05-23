@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hello_world/floating_buttom_green.dart';
 
 class CardImage extends StatelessWidget {
   @override
@@ -19,6 +20,11 @@ class CardImage extends StatelessWidget {
         shape: BoxShape.rectangle
       ),
     );
-    return cardImage;
+    return Stack(
+      alignment: Alignment(0.9,1.1),
+      children: <Widget>[
+      cardImage,
+      FloatingButtomGreen()
+    ],);
   }
 }

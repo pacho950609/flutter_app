@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hello_world/desription_place.dart';
 import 'package:hello_world/header_app_bar.dart';
 import 'package:hello_world/review_list.dart';
+import 'package:hello_world/test_app.dart';
 
 void main() {
   runApp(MyApp());
@@ -29,28 +30,7 @@ class MyApp extends StatelessWidget {
           // closer together (more dense) than on mobile platforms.
           visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
-        home: Scaffold(
-            // appBar: AppBar(
-            //   title: Text("Hola mundo"),
-            // ),
-            // body: Column(children: <Widget>[
-            //   new DescriptionPlace('Estilo1','There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected huma.',4),
-            //   new ReviewList()
-            // ],)
-            body: Stack(
-              children: <Widget>[
-                ListView(
-                  children: <Widget>[
-                    new DescriptionPlace(
-                        'Estilo1',
-                        'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected huma.',
-                        4),
-                    new ReviewList()
-                  ],
-                ),
-                HeaderAppBar(),
-              ],
-            )) //MyHomePage(title: 'Flutter Demo Home Page'),
+        home: TestApp() //MyHomePage(title: 'Flutter Demo Home Page'),
         );
   }
 }
