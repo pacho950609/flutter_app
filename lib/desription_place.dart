@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hello_world/buttom_purple.dart';
 
 enum StarType { COMPLETE, EMPTY, HALF }
 
@@ -25,7 +26,7 @@ class DescriptionPlace extends StatelessWidget {
     }
 
     final star = Container(
-      margin: EdgeInsets.only(top: 283, left: 3),
+      margin: EdgeInsets.only(top: 353, left: 3),
       child: Icon(
         icon,
         color: Colors.yellow,
@@ -47,7 +48,7 @@ class DescriptionPlace extends StatelessWidget {
     final titleStarsWidget = Row(
       children: <Widget>[
         Container(
-          margin: EdgeInsets.only(top: 280, left: 20, right: 20),
+          margin: EdgeInsets.only(top: 350, left: 20, right: 20),
           child: Text(
             name,
             style: TextStyle(fontSize: 30, fontWeight: FontWeight.w900),
@@ -67,7 +68,8 @@ class DescriptionPlace extends StatelessWidget {
     );
 
     final descriptionPlace = Column(
-      children: <Widget>[titleStarsWidget, descriptionWidget],
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: <Widget>[titleStarsWidget, descriptionWidget, ButtomPurple()],
     );
 
     return descriptionPlace;

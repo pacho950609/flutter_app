@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hello_world/desription_place.dart';
-import 'package:hello_world/gradient_back.dart';
-import 'package:hello_world/review.dart';
+import 'package:hello_world/header_app_bar.dart';
 import 'package:hello_world/review_list.dart';
 
 void main() {
@@ -31,9 +30,9 @@ class MyApp extends StatelessWidget {
           visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
         home: Scaffold(
-            appBar: AppBar(
-              title: Text("Hola mundo"),
-            ),
+            // appBar: AppBar(
+            //   title: Text("Hola mundo"),
+            // ),
             // body: Column(children: <Widget>[
             //   new DescriptionPlace('Estilo1','There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected huma.',4),
             //   new ReviewList()
@@ -49,7 +48,7 @@ class MyApp extends StatelessWidget {
                     new ReviewList()
                   ],
                 ),
-                GradientBack(),
+                HeaderAppBar(),
               ],
             )) //MyHomePage(title: 'Flutter Demo Home Page'),
         );
